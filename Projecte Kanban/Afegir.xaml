@@ -1,0 +1,24 @@
+﻿<Window x:Class="Projecte_Kanban.Afegir"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projecte_Kanban"
+        mc:Ignorable="d"
+        Title="Afegir" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Nom" VerticalAlignment="Top" FontSize="16" FontFamily="NotoSans" FontWeight="Bold" />
+        <TextBox Name ="nomTasca" HorizontalAlignment="Center" Margin="0,34,0,0" TextWrapping="Wrap" GotFocus="nomTasca_GotFocus" Text="Escriu el nom de la tasca" VerticalAlignment="Top" Width="780" FontSize="16" FontFamily="NotoSans"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,94,0,0" TextWrapping="Wrap" Text="Descripció" VerticalAlignment="Top" FontSize="16" FontFamily="NotoSans" FontWeight="Bold" />
+        <TextBox Name="descripcioTasca" HorizontalAlignment="Center" Margin="0,118,0,0" TextWrapping="Wrap" GotFocus="descripcioTasca_GotFocus" Text="Escriu una descripció de la tasca" VerticalAlignment="Top" Width="780" FontSize="16" FontFamily="NotoSans"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" FontFamily="NotoSans" FontWeight="Bold" Text="Data Prevista" />
+        <TextBox Name="dataTasca" HorizontalAlignment="Center" Margin="0,217,0,0" TextWrapping="Wrap"  GotFocus="dataTasca_GotFocus" Text="Escriu la data prevista per acabar la tasca" VerticalAlignment="Top" Width="780" FontSize="16" FontFamily="NotoSans" />
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" FontFamily="NotoSans" FontWeight="Bold" Text="Responsable" />
+        <TextBox Name="responasbleTasca" HorizontalAlignment="Center" Margin="0,306,0,0" TextWrapping="Wrap" GotFocus="responsableTasca_GotFocus" Text="Escriu el nom del responsable de la tasca" VerticalAlignment="Top" Width="780" FontSize="16" FontFamily="NotoSans" />
+
+        <Button Name="Confirmar" TextBlock.Foreground="White" Background="#2044FF" Content="Confirmar" HorizontalAlignment="Center" Margin="0,368,0,0" VerticalAlignment="Top" Width="100" Height="35"/>
+    </Grid>
+</Window>
